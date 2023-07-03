@@ -54,10 +54,15 @@ void renameFiles(const char *folderPath, const char *oldName, const char *newNam
     closedir(dir);
 }
 
-int main() {
-    const char *folderPath = "/path/to/folder";  // Replace with the actual path to your folder
-    const char *oldName = "oldName"; // Replace with the what you wanna chagne
-    const char *newName = "newName"; // Replace with the actual new name
+int main(int argc, char *argv[]) {
+    if (argc != 4) {
+        printf("Usage: ./program <folderPath> <oldName> <newName>\n");
+        return 1;
+    }
+
+    const char *folderPath = argv[1];
+    const char *oldName = argv[2];
+    const char *newName = argv[3];
 
     renameFiles(folderPath, oldName, newName);
 
