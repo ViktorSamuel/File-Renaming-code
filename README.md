@@ -1,6 +1,6 @@
 # File Renaming Program
 
-This comparation of two programs is designed to rename files in a specified folder by replacing a specific string with a new one. One is implemented in C another in python.
+This is comparation of two programs is designed to rename files in a specified folder by replacing a specific string with a new one. One is implemented in C another in python.
 
 ## Usage
 
